@@ -147,3 +147,5 @@ export default function SearchForm({ onSearch, isLoading }: SearchFormProps) {
   );
 }
 
+
+

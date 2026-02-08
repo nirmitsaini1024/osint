@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import SearchForm from "./components/SearchForm";
 import SearchResults from "./components/SearchResults";
 
@@ -65,9 +66,17 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-2">
             🔍 Sherlock
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400">
+          <p className="text-lg text-slate-600 dark:text-slate-400 mb-4">
             Hunt down social media accounts by username across 400+ social networks
           </p>
+          <div className="flex justify-center gap-3">
+            <Link
+              href="/chatbot"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all font-medium shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              🤖 Try AI Intelligence Chatbot
+            </Link>
+          </div>
         </header>
 
         <SearchForm onSearch={handleSearch} isLoading={isLoading} />

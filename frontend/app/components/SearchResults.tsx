@@ -162,3 +162,5 @@ export default function SearchResults({ results }: SearchResultsProps) {
   );
 }
 
+
+

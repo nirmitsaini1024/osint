@@ -11,3 +11,4 @@ source venv/bin/activate
 echo "Starting FastAPI server on http://localhost:8000"
 python api.py
 
+
